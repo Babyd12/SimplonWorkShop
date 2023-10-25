@@ -2,10 +2,10 @@
     Interface InterfaceEtudiant{
        public function sePresenter();
        public function faireCours();
-       public function faireEvaluation();
+       public function faireEvaluation($evaluationName,$evaluationDate);
     }
 
     Interface InterfaceFormateur{
-        public function EvaluerEtudiant();
+        public function EvaluerEtudiant($stuentName, $evaluationDate);
     }
 ?>
