@@ -1,6 +1,6 @@
 <?php 
-
-class EtudiantConstructor{
+ require_once 'FormateurConstructor.php';
+class EtudiantConstructor {
     public function __construct($nom, $prenom, $matricul, $dateNaissance){
           
         $this -> setNom($nom);

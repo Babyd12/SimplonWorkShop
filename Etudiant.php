@@ -1,10 +1,10 @@
 <?php
     require_once 'Interfaces.php';
     require_once 'EtudiantConstructor.php';
-
+    
     Class Etudiant extends EtudiantConstructor implements InterfaceEtudiant   {
         private $nom;
-        private $prenom ;
+        private $prenom;
         private $matricul;
         public $dateNaissance;
 
@@ -15,7 +15,7 @@
 
         public function setNom($nom) 
         {
-
+            
             if(is_string($nom) && strlen($nom) < 15){
                 $this -> nom = $nom;
             }

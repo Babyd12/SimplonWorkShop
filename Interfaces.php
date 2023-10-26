@@ -8,4 +8,9 @@
     Interface InterfaceFormateur{
         public function EvaluerEtudiant($stuentName, $evaluationDate);
     }
+
+    Interface InterfaceEvaluation{
+        public function Evaluation($label, $teacher, $assesment, $delay, $description);
+    }
+
 ?>
